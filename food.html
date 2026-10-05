@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Food Inventory</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background: #f9fafb;
+}
+
+.safe {
+    color: #16a34a;
+}
+
+.warning {
+    color: #d97706;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<aside class="sidebar">
+
+<div class="logo">
+FOOD<span>SAFE</span>
+</div>
+
+<nav>
+
+<a href="index.html">
+🏠 Dashboard
+</a>
+
+<a href="temperature.html">
+🌡️ Temperature
+</a>
+
+<a href="food.html"
+class="active">
+🍗 Food Inventory
+</a>
+
+<a href="alerts.html">
+🚨 Alerts
+</a>
+
+<a href="reports.html">
+📊 Reports
+</a>
+
+</nav>
+
+</aside>
+
+
+<main class="main">
+
+
+<header class="topbar">
+
+<div>
+
+<h1>Food Inventory</h1>
+
+<p>
+Monitor stored food items and expiry dates
+</p>
+
+</div>
+
+</header>
+
+
+<section class="panel">
+
+
+<div class="panel-header">
+
+<h2>Food Items</h2>
+
+<button>
++ Add Food
+</button>
+
+</div>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Food</th>
+
+<th>Storage</th>
+
+<th>Temperature</th>
+
+<th>Expiry Date</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+<tr>
+
+<td>Chicken</td>
+
+<td>Refrigerator 1</td>
+
+<td>3.8°C</td>
+
+<td>Oct 02, 2026</td>
+
+<td class="safe">
+🟢 Safe
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Beef</td>
+
+<td>Refrigerator 1</td>
+
+<td>4.1°C</td>
+
+<td>Oct 04, 2026</td>
+
+<td class="safe">
+🟢 Safe
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Fish</td>
+
+<td>Refrigerator 2</td>
+
+<td>7.2°C</td>
+
+<td>Sep 30, 2026</td>
+
+<td class="warning">
+🟡 Warning
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>Ice Cream</td>
+
+<td>Freezer 1</td>
+
+<td>-18°C</td>
+
+<td>Nov 12, 2026</td>
+
+<td class="safe">
+🟢 Safe
+</td>
+
+</tr>
+
+
+</tbody>
+
+</table>
+
+
+</section>
+
+
+</main>
+
+
+</body>
+
+</html>

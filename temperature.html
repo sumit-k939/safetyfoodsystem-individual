@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Monitoring</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<aside class="sidebar">
+
+    <div class="logo">
+        FOOD<span>SAFE</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            🏠 Dashboard
+        </a>
+
+        <a href="temperature.html"
+           class="active">
+            🌡️ Temperature
+        </a>
+
+        <a href="food.html">
+            🍗 Food Inventory
+        </a>
+
+        <a href="alerts.html">
+            🚨 Alerts
+        </a>
+
+        <a href="reports.html">
+            📊 Reports
+        </a>
+
+    </nav>
+
+</aside>
+
+
+<main class="main">
+
+
+<header class="topbar">
+
+    <div>
+
+        <h1>Temperature Monitoring</h1>
+
+        <p>
+            Monitor storage temperature in real time
+        </p>
+
+    </div>
+
+</header>
+
+
+<section class="cards">
+
+
+<div class="card">
+
+    <div class="card-top">
+
+        <h3>Refrigerator 1</h3>
+
+        <span>❄️</span>
+
+    </div>
+
+    <div
+        id="fridgeTemperature"
+        class="temperature">
+
+        3.8°C
+
+    </div>
+
+    <div
+        id="fridgeStatus"
+        class="normal">
+
+        ● Normal
+
+    </div>
+
+</div>
+
+
+<div class="card">
+
+    <div class="card-top">
+
+        <h3>Freezer 1</h3>
+
+        <span>🧊</span>
+
+    </div>
+
+    <div class="temperature">
+
+        -18°C
+
+    </div>
+
+    <div class="normal">
+
+        ● Normal
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+<section class="panel">
+
+    <div class="panel-header">
+
+        <h2>
+            Refrigerator Temperature History
+        </h2>
+
+        <span>
+            Live Monitoring
+        </span>
+
+    </div>
+
+
+    <div class="fake-chart">
+
+        <div class="chart-line"></div>
+
+        <div class="chart-labels">
+
+            <span>10:00</span>
+
+            <span>12:00</span>
+
+            <span>14:00</span>
+
+            <span>16:00</span>
+
+            <span>18:00</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodSafe - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            FOOD<span>SAFE</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html" class="active">
+                🏠 Dashboard
+            </a>
+
+            <a href="temperature.html">
+                🌡️ Temperature
+            </a>
+
+            <a href="food.html">
+                🍗 Food Inventory
+            </a>
+
+            <a href="alerts.html">
+                🚨 Alerts
+            </a>
+
+            <a href="reports.html">
+                📊 Reports
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Food Safety Dashboard</h1>
+                <p>Monitor your food storage conditions</p>
+            </div>
+
+            <div class="user">
+                👤 Admin
+            </div>
+
+        </header>
+
+
+        <!-- OVERALL STATUS -->
+
+        <section class="overall-status">
+
+            <div>
+
+                <h2>Overall Food Safety</h2>
+
+                <p>
+                    All monitored areas are currently operating normally.
+                </p>
+
+            </div>
+
+            <div class="safe-badge">
+                🟢 SAFE
+            </div>
+
+        </section>
+
+
+        <!-- TEMPERATURE CARDS -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <div class="card-top">
+                    <h3>Refrigerator 1</h3>
+                    <span>❄️</span>
+                </div>
+
+                <div class="temperature">
+                    3.8°C
+                </div>
+
+                <div class="normal">
+                    ● Normal
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-top">
+                    <h3>Freezer 1</h3>
+                    <span>🧊</span>
+                </div>
+
+                <div class="temperature">
+                    -18°C
+                </div>
+
+                <div class="normal">
+                    ● Normal
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-top">
+                    <h3>Cold Storage</h3>
+                    <span>🥶</span>
+                </div>
+
+                <div class="temperature">
+                    4.1°C
+                </div>
+
+                <div class="normal">
+                    ● Normal
+                </div>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-top">
+                    <h3>Hot Food</h3>
+                    <span>🔥</span>
+                </div>
+
+                <div class="temperature">
+                    63°C
+                </div>
+
+                <div class="normal">
+                    ● Normal
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOWER SECTION -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- TEMPERATURE SUMMARY -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <h2>Temperature Overview</h2>
+
+                    <span>Last 24 Hours</span>
+
+                </div>
+
+                <div class="fake-chart">
+
+                    <div class="chart-line"></div>
+
+                    <div class="chart-labels">
+
+                        <span>00:00</span>
+                        <span>06:00</span>
+                        <span>12:00</span>
+                        <span>18:00</span>
+                        <span>24:00</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECENT ALERTS -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <h2>Recent Alerts</h2>
+
+                    <a href="alerts.html">View All</a>
+
+                </div>
+
+                <div class="alert-item warning">
+
+                    <span>🟡</span>
+
+                    <div>
+
+                        <strong>Temperature Warning</strong>
+
+                        <p>
+                            Refrigerator 2 reached 6.8°C.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="alert-item danger">
+
+                    <span>🔴</span>
+
+                    <div>
+
+                        <strong>Expiry Warning</strong>
+
+                        <p>
+                            Fish expires tomorrow.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="alert-item success">
+
+                    <span>🟢</span>
+
+                    <div>
+
+                        <strong>System Normal</strong>
+
+                        <p>
+                            Freezer 1 returned to normal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            FoodSafe Monitoring System © 2026
+
+        </footer>
+
+    </main>
+
+
+</body>
+
+</html>
