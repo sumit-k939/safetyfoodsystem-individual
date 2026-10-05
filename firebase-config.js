@@ -9,13 +9,13 @@ import {
     "https://www.gstatic.com/firebasejs/12.19.0/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
+    apiKey: "Your Firebase API Key",
     authDomain: "foodsafe-monitoring-system.firebaseapp.com",
     databaseURL: "https://foodsafe-monitoring-system-default-rtdb.firebaseio.com",
     projectId: "foodsafe-monitoring-system",
     storageBucket: "foodsafe-monitoring-system.firebasestorage.app",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    messagingSenderId: "Your Firebase Messaging Sender ID",
+    appId: "Your Firebase App ID"
 };
 
 const app = initializeApp(firebaseConfig);
